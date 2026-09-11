@@ -25,7 +25,7 @@ export const useRocketStore = create((set, get) => ({
 
     try {
       const res = await axiosInstance.get(
-        "/launcher/?manufacturer__name=SpaceX&mode=detailed&limit=13",
+        "/launcher/?manufacturer__name=SpaceX&mode=detailed&limit=20",
       );
 
       set({ rockets: res.data.results });
